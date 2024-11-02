@@ -20,5 +20,5 @@
   {"clojars" {:url "https://clojars.org/repo"
               :sign-releases false}}
 
-  :dependencies [[org.clojure/tools.namespace "0.3.0-alpha3"]]
+  :dependencies [[org.clojure/tools.namespace "1.5.0" :exclusions [org.clojure/clojure]]]
   :eval-in-leiningen true)

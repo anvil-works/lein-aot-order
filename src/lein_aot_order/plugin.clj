@@ -6,7 +6,7 @@
 (defn middleware [project]
   (if (= :order (:aot project))
     (do
-      (main/info "Injecting :aot list of ordered namespaces.")
+      (main/debug "Injecting :aot list of ordered namespaces.")
       (assoc project
              :aot (vec (core/namespaces (:source-paths project)))))
     project))
